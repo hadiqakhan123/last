@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif
+}
+/*header*/
+
+header {
+  background-color: #e5bbbb;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: hwb(30 7% 20%);
+  display: block;
+  transition: 0.2s linear;
+}
+section nav ul li a:hover::after {
+  width: 100%;
+}
+
+section nav ul li a:hover {
+  color: #c6171d;
+}
+
+
+.logo img {
+  height: 60px;
+  margin-left:50px;
+}
+section nav .icon i {
+  font-size: 18px;
+  color: #000;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+/*hero*/
+
+.hero {
+  background-image: url("assests/hero-background1.jpg");
+  background-size: cover;
+  background-position:center;
+  height: 100vh;
+  display: flex;
+
+
+  text-align: left;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 20px;
+  margin-top :50px;
+  margin-left: 4%;
+  
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+    .container {
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tab-group {
+        margin-bottom: 20px;
+    }
+    
+    .tab {
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .tab.active {
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+    .tab-content {
+        padding: 20px;
+        border-radius: 0 0 8px 8px;
+        border-top: 1px solid #ddd;
+    }
+    
+    .input-group {
+        margin-bottom: 20px;
+    }
+    
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    
+    .btn {
+        display: block;
+        width: 30%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+.btn {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e60000;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  .icon i {
+    font-size: 16px;
+    margin: 0 3px;
+  }
+}
+
+/* For screens up to 576px */
+@media only screen and (max-width: 576px) {
+  .hero-content {
+    margin-top: 20px;
+    margin-left: 2%;
+  }
+  
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
